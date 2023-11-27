@@ -30,10 +30,17 @@ function playRound () {
     let result = "";
     if (playerSelection === computerSelection) {
         result = 0;
-    } else if ((playerSelection === "rock" && computerSelection === "paper") || (playerSelection === "paper" && computerSelection === "scissor") || (playerSelection === "scissor" && computerSelection === "rock")) {
-        result = 1;
-    } else if ((playerSelection === "rock" && computerSelection === "scissor") || (playerSelection === "paper" && computerSelection === "rock") || (playerSelection === "scissor" && computerSelection === "paper")) {
-        result = 2;
+    } else if ((playerSelection === "rock" && computerSelection === "paper") || 
+                (playerSelection === "paper" && computerSelection === "scissor") || 
+                (playerSelection === "scissor" && computerSelection === "rock")) {
+
+                    result = 1;
+
+    } else if ((playerSelection === "rock" && computerSelection === "scissor") || 
+                (playerSelection === "paper" && computerSelection === "rock") || 
+                (playerSelection === "scissor" && computerSelection === "paper")) {
+
+                    result = 2;
     }
 
     return result;
